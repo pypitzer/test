@@ -1,12 +1,37 @@
-[tool.poetry]
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
 name = "TestPyPitzer"
 version = "0.1.0"
-description = "A short description of my project"
-authors = ["Yiping Liu <yiping.liu@rwth-aachen.de>"]
+description = "A short description of your package"
+long_description = """
+A longer description of your package that includes Markdown formatting.
+"""
+author = "Your Name"
+author_email = "your.email@example.com"
+license = "MIT"
+keywords = ["python", "package", "example"]
+url = "https://github.com/pypitzer/test"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-requests = "^2.26.0"
+[options]
+packages = find:
+install_requires = [
+    # List your package dependencies here
+]
+python_requires = ">=3.6"
 
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.4"
+[options.packages.find]
+exclude = ["tests"]
