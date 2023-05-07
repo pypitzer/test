@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "my-project"
+name = "TestPyPitzer"
 version = "0.1.0"
 description = "A short description of my project"
 authors = ["Yiping Liu <yiping.liu@rwth-aachen.de>"]
