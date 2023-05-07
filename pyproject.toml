@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "my-project"
+version = "0.1.0"
+description = "A short description of my project"
+authors = ["Yiping Liu <yiping.liu@rwth-aachen.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
